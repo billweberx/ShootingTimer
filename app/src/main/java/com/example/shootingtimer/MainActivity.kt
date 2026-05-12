@@ -147,7 +147,7 @@ fun TimerBlock(
                         timerState.remainingTime -= 1
                     }
                 } else {
-                    // Time hit zero - Start 2-second beep
+                    // Time hit zero - Start 300 MS beep
                     toneGenerator.startTone(ToneGenerator.TONE_DTMF_0, 300)
                     
                     if (timerState.isInDelayPhase) {
